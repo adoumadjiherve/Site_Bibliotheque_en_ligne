@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque en ligne - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bibliothèque en ligne</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="wishlist.php">Ma liste de lecture</a></li>
+                    <li><a href="admin.php">Administration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Bienvenue dans notre bibliothèque en ligne</h2>
+            <p>Découvrez notre vaste collection de livres et gérez votre liste de lecture personnelle.</p>
+        </section>
+
+        <section class="search-section">
+            <h3>Rechercher un livre</h3>
+            <form action="results.php" method="GET">
+                <div class="form-group">
+                    <input type="text" name="query" placeholder="Rechercher par titre ou auteur..." required>
+                    <button type="submit" class="btn">Rechercher</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h4>Recherche avancée</h4>
+                <p>Trouvez facilement les livres qui vous intéressent grâce à notre moteur de recherche performant.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Liste de lecture</h4>
+                <p>Créez et gérez votre liste de lecture personnelle pour ne jamais oublier les livres que vous souhaitez lire.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Accès facile</h4>
+                <p>Notre interface intuitive vous permet de naviguer facilement dans notre collection.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bibliothèque en ligne. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
